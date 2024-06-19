@@ -1,0 +1,44 @@
+@import "libs/bootstrap-reboot.min";
+
+@import "libs/fonts";
+
+//base
+@import "base/vars";
+//@import "base/mixins";
+
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $dark-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
+}
+
+.divider {
+	width: 60px;
+	height: 3px;
+	background-color: $accent-color;
+	margin: 25px auto 0 auto;
+}
+
+//body {
+//	font-family: Chalkboard, sans-serif;
+//}
+
+//blocks
+@import "blocks/containers";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/hamburger";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/sidepanel";
+@import "blocks/about";
+@import "blocks/experience";
+@import "blocks/skills"

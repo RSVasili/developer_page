@@ -1,0 +1,50 @@
+@import "../mixins/circle";
+
+.title {
+	font-weight: 700;
+
+	&fz_12 {
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	&_fz14 {
+		font-size: 14px;
+	}
+
+	&_fz18 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	&_fz20 {
+		font-size: 20px;
+	}
+
+	&_fz36 {
+		font-size: 36px;
+	}
+
+	&_fz68 {
+		font-family: "LibreBaskervilleRegular", sans-serif;
+		font-size: 68px;
+		line-height: 118px;
+		letter-spacing: 5px;
+	}
+
+	&_section {
+		text-align: center;
+		position: relative;
+		@include before_circle;
+
+		&:before {
+			top: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&-subtitle {
+			text-align: center;
+		}
+	}
+}

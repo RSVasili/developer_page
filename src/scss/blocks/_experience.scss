@@ -1,0 +1,92 @@
+@import "../mixins/circle";
+
+.experience {
+	margin-top: 120px;
+
+	&__wrapper {
+		padding: 60px 65px 0 65px;
+		display: grid;
+		grid-template-columns: repeat(2, 425px);
+		column-gap: 136px;
+	}
+
+	&__column {
+		&-title {
+			position: relative;
+			padding-left: 35px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				background-color: $accent-color;
+				border-radius: 100%;
+				left: -7px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		ul {
+			list-style-type: none;
+
+			li {
+				position: relative;
+
+				&:after {
+					content: '';
+					position: absolute;
+					width: 2px;
+					height: calc(100% + 18px);
+					background-color: $dark-font;
+					top: -8px;
+					left: 0;
+				}
+			}
+		}
+	}
+
+	&__item {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 43px;
+			background-color: $dark-font;
+			top: 60px;
+		}
+		&-head {
+			position: relative;
+			padding: 45px 0 0 99px;
+		}
+
+		&-text {
+			padding-left: 43px;
+			margin-top: 12px;
+		}
+
+		&-icon {
+			position: absolute;
+			left: 42px;
+			top: 44px;
+			@include before_circle;
+			img {
+				position: absolute;
+				left: 17px;
+				top: 17px;
+			}
+		}
+
+		&-subtitle {
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		&-text {
+			font-weight: 500;
+			font-size: 12px;
+		}
+	}
+}
