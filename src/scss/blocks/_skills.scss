@@ -1,3 +1,35 @@
 .skills {
-	padding-top: 120px;
+	padding-top: 60px;
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 270px);
+		column-gap: 13px;
+		row-gap: 13px;
+		padding-top: 60px;
+	}
+
+	&__item {
+		border: 1px solid $dark-font;
+		padding: 30px 30px 30px 25px;
+
+		&-icon {
+			height: 65px;
+			display: flex;
+			align-items: center;
+		}
+
+		&-title {
+			margin-top: 20px;
+			text-transform: uppercase;
+		}
+
+		&-text {
+			margin-top: 15px;
+			font-weight: 500;
+			font-size: 12px;
+		}
+	}
+
+
 }

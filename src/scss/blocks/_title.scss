@@ -36,11 +36,13 @@
 		text-align: center;
 		position: relative;
 		@include before_circle;
+		z-index: 0;
 
 		&:before {
-			top: -5px;
+			top: -6px;
 			left: 50%;
 			transform: translateX(-50%);
+			z-index: -1;
 		}
 
 		&-subtitle {
