@@ -1,0 +1,19 @@
+.portfolio {
+	padding-top: 120px;
+
+	&_title {
+		color: $light-font;
+	}
+
+	&_subtitle {
+		color: $light-font;
+	}
+
+	&__items {
+		margin-top: 60px;
+		display: grid;
+		grid-template: repeat(2, 280px) / repeat(4, 280px);
+		grid-auto-rows: 280px;
+		gap: 6px;
+	}
+}

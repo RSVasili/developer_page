@@ -1,3 +1,5 @@
+@import "../mixins/circle";
+
 .skills {
 	padding-top: 60px;
 
@@ -21,13 +23,48 @@
 
 		&-title {
 			margin-top: 20px;
-			text-transform: uppercase;
 		}
 
 		&-text {
 			margin-top: 15px;
 			font-weight: 500;
 			font-size: 12px;
+		}
+	}
+
+	&__levels {
+		margin-top: 120px;
+		display: grid;
+		grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+		column-gap: 45px;
+		row-gap: 30px;
+	}
+
+	&__level {
+		display: grid;
+		grid-template: minmax(21px, auto) 14px / 200px 35px;;
+		justify-content: space-between;
+		align-content: space-between;
+		align-items: end;
+
+		&-title {
+			position: relative;
+			padding: 9px 0 0 13px;
+			@include before_circle
+		}
+
+		&-percent {
+			font-size: 14px;
+			line-height: 21px;
+			font-weight: 500;
+		}
+
+		&-line {
+			width: 100%;
+			height: 14px;
+			background-color: #e8e4de;
+			border-radius: 4px;
+			grid-column: 1/3;
 		}
 	}
 

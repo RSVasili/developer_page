@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 25px auto 0 auto;
 }
 
-.practice {
+.skills__wrapper {
 	background: linear-gradient(to bottom, #f8f8fc, #0a0a0a);
 	z-index: -100;
 }
@@ -46,4 +46,5 @@ h1, h2, h3, h4, h5, h6 {
 @import "blocks/sidepanel";
 @import "blocks/about";
 @import "blocks/experience";
-@import "blocks/skills"
+@import "blocks/skills";
+@import "blocks/potfolio";
