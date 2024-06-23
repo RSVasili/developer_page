@@ -1,5 +1,5 @@
 .portfolio {
-	padding-top: 120px;
+	padding: 120px 0 60px 0;
 
 	&_title {
 		color: $light-font;
@@ -36,7 +36,7 @@
 		}
 
 		&:hover {
-			transform: scale(1.03);
+			transform: scale(0.97);
 			filter: opacity(50%);		}
 	}
 }
