@@ -1,7 +1,7 @@
 .side__panel {
 	height: 26px;
 	position: absolute;
-	top: 335px;
+	top: 470px;
 	left: -100px;
 	display: flex;
 	justify-content: center;
@@ -11,6 +11,7 @@
 	font-weight: 400;
 	letter-spacing: 1.3px;
 	color: #000000;
+	z-index: 1;
 
 
 	&-line {

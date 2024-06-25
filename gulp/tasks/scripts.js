@@ -15,7 +15,7 @@ export function scripts() {
             })
         ))
         .pipe(uglify())
-        .pipe(rename({suffix: ".min", prefix: ""}))
+        .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(dest(paths.build.buildScripts))
         .pipe(browserSync.stream());
 }
